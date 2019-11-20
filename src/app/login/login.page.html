@@ -1,0 +1,45 @@
+<div>
+  <ion-card class="ionCard">
+
+    <div>
+      <h3 style="color: azure;text-align: center;"> Log In </h3>
+    </div>
+    
+    <form action="" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+      <div class="formField">
+        <section>
+          <header>User Name</header>
+          <ion-input formControlName="userName" type="text" ></ion-input>
+        </section>
+      </div>
+
+      <div class="formField">
+          <section>
+            <header>Password</header>
+            <ion-input formControlName="password" type="password"></ion-input>
+            <a class="forgetPass" routerLink="forget">Forget Password ?</a>
+          </section>
+      </div>
+
+      <div class="formField">
+        <section>
+            <!-- <ion-toast-controller></ion-toast-controller> -->
+          <ion-button type="submit" color="primary" slot="end">LogIn</ion-button>
+        </section>
+      </div>
+    </form>
+
+    <!-- horizontal hr line -->
+    <hr style="border: 0.1px solid rgb(58, 117, 184);">
+    
+    <div>
+      <div>
+        <section>
+          <h6> Don't Have Account ? </h6>
+          <a class="register" routerLink="/registration">Register</a>
+        </section>
+      </div>
+    </div>
+
+  </ion-card>
+</div>

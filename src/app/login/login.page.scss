@@ -1,0 +1,53 @@
+.ionCard{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    transform: translateY(50%);
+}
+
+ion-input{
+    color: snow;
+    border: 1px solid steelblue;
+    border-radius: 10px;
+}
+
+.loginTitle {
+    font-size: 22px;
+    font-weight: 200;
+    text-transform: uppercase;
+    align-self:center;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background: url('../../assets/images/COVER_IMAGE560977350.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formField{
+    margin: 15px;
+}
+
+header{
+    color:thistle;
+    margin-bottom: 5px;
+}
+
+.register{
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    color: rgb(236, 129, 67);
+}
+
+.forgetPass{
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover{
+    color: skyblue;
+}

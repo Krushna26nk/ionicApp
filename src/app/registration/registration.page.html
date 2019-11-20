@@ -1,0 +1,57 @@
+<div style="height: 100%;width: 100%;border: 1px solid red;">
+  <ion-card class="ionCard">
+
+    <div>
+      <h3 style="color: azure;text-align: center;"> Register </h3>
+    </div>
+    
+    <form action=""[formGroup]="registerForm" (ngSubmit)="onRegister()">
+      <div class="formField">
+        <section>
+          <header>Name</header>
+          <ion-input formControlName="firstName" type="text" ></ion-input>
+        </section>
+      </div>
+
+      <div class="formField">
+        <section>
+          <header>Last Name</header>
+          <ion-input formControlName="lastName" type="text"></ion-input>
+        </section>
+      </div>
+
+      <div class="formField">
+        <section>
+          <header>Email</header>
+          <ion-input formControlName="email" type="email"></ion-input>
+        </section>
+      </div>
+
+      <div class="formField">
+          <section>
+            <header>Password</header>
+            <ion-input formControlName="password" type="password"></ion-input>
+          </section>
+      </div>
+
+      <div class="formField">
+        <section>
+          <ion-button color="primary" type="submit" slot="end">Register</ion-button>
+        </section>
+      </div>
+    </form>
+
+    <!-- horizontal hr line -->
+    <hr style="border: 0.1px solid rgb(58, 117, 184);">
+    
+    <div>
+      <div>
+        <section>
+          <h6> Already Have Account ? </h6>
+          <a class="login" routerLink="/login">LogIn</a>
+        </section>
+      </div>
+    </div>
+
+  </ion-card>
+</div>
